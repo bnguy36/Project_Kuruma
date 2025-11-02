@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+    /* width: 80%;
+    display: flexbox;
+    margin: 4% auto; */
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    display: inline-flex;
+    justify-content: center;
+    font-family: fantasy;
+    font-size: 3em;
+    border-bottom: 2px solid pink;
+    border-right: 2px solid pink;
+    width: 400px;
+    text-align: center;
+    -moz-box-shadow: 4px 4px 5px #888888;
+    -ms-box-shadow: 4px 4px 5px #888888;
+    -webkit-box-shadow: 4px 4px 5px #888888;
+    -o-box-shadow: 4px 4px 5px #888888;
+    box-shadow: 4px 4px 5px #888888;
+    margin-top: 10px;
+    padding-left: auto;
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    transition: all 1s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    /* transform: rotate(1080deg); */
+}
+
+
+
+/* CSS3 notes
+-   Tansition property --> we want "all" the images to transition over 1 second duration. The transition is when I hover, the image transforms by a scale of 1.1x original size
+-   To ensure CSS3 browser support, visit https://caniuse.com/ and type in "CSS Flexbox" for e.g.
+-   If not supported, see above box-shadow example
+*/

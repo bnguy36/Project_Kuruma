@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Nguyen's Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: beige;
+      }
+
+      body {
+        width: 80%;
+        min-width: 800px;
+        margin: 4% auto;
+      }
+
+      nav {
+        height: 50px;
+        flex: 100%;
+        display: flex;
+      }
+
+      nav ul {
+        padding: 0;
+        list-style-type: none;
+        flex: 2;
+        display: flex;
+      }
+
+      header, nav li {
+        display: inline;
+        text-align: center;
+        flex: 1;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        /* display: inline-block; */
+        /* font-size: 2rem; */
+        /* height: 3rem; */
+        /* line-height: 1.7; */
+      }
+      header {
+        margin-bottom: 10px;
+        display: flex 3;
+        flex-flow: row wrap;
+      }
+
+      main {
+        display: flex;
+      }
+
+      article {
+        flex: 4;
+      }
+
+      aside {
+        flex: 1;
+        margin-left: 10px;
+        padding: 1%;
+      }
+
+      aside a {
+        display: block;
+        float: left;
+        /* width: 20%; */
+      }
+
+      footer {
+        margin-top: 4%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Boss Nguyen's Blog</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="../HTML/2.1 Submitting Forms.html">Register</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <!-- A Search form is another common non-linear way to navigate through a website. -->
+      <form>
+        <input type="search" name="q" placeholder="Search" type = "text">
+        <input type="submit" value="Go!" />
+      </form>
+    </nav>
+
+    <!-- Here is our page's main content -->
+    <main>
+      <article>
+        <h2>Article 1</h2>
+        <p title="bruh"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem distinctio nostrum, nobis recusandae, nihil similique, veritatis quas non doloribus laborum sint. 
+          Enim, ullam modi? Quas doloremque sed sit praesentium minima
+        </p>
+
+        <h3>Subsection 1</h3>
+        <p>
+          Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
+          Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
+        </p>
+
+        <ol>
+          <li>Argument 1</li>
+          <li>Argument 2</li>
+          <li>Argument 3</li>
+        </ol>
+
+        <p>
+          Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.Ut convallis 
+          libero in urna ultrices accumsan. Donec sed odio eros.
+        </p>
+
+        <h3>Subsection 2</h3>
+
+        <p>
+          Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cumsoclis natoque penatibus et manis dis parturient montes, nascetur
+          ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+        </p>
+
+        <p>
+          Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorperultricied.
+          Curabitur ornare, ligula semper consectetur sagittis, nisidiam iaculis velit, is fringille sem nunc vet mi.
+        </p>
+      </article>
+
+      <!-- the aside content can also be nested within the main content -->
+      <aside>
+        <h2>Related Articles</h2>
+        <!-- Relative path - use ../.. to signify 2 folders down -->
+        <ul>
+          <li><a href="../../Projects - HTML, CSS, JS/Hummus/Hummus v1.html">The health benefits of Hummis</a></li>
+          <li><a href="../../MDN interactive tutorials/Markup Letter Assessment/Markup Letter Assessment.html">University Application Example</a></li>
+          <li><a href="#">It's coming home</a></li>
+          <li><a href="#">Melbourne Spectacle: 4 seasons </a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+    <footer>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+  </body>
+</html>
